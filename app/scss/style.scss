@@ -2,5 +2,61 @@
 @import "global";
 @import "fonts";
 
+.header__top {
+    background-color: #eef1f3;
+    &-inner {
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.header__top-btn {
+    background-color: $blue;
+    border-radius: 20px;
+    width: 141px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 12px 18px;
+}
+.header__menu-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
 
+}
+.header__menu-search{
+    form {
+        min-width: 360px;
+        margin: 0 auto;
+        input {
+            display: block;
+            width: 100%;
+            padding-left: 25px;
+            border-radius: 20px;
+            height: 46px;
+            border: 1px solid #d9dfe5;
 
+            &::placeholder {
+                color: #898f96;
+            }
+        }
+    }
+}
+
+.menu__list {
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 25px;
+        }
+    }
+    a {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+        color: #333333;
+    }
+}
